@@ -140,14 +140,16 @@ img {
         grid-template-rows: repeat(6, 75px);
         background-color: rgba(128, 128, 128, 0.467);
     }
-
+    button{
+        font-family: infinity;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: rgba(198, 196, 196, 0.503);
+    }
 }
 
-.reservado {
-    background-color: green; /* Cambia este color al que desees */
-    color: white; /* Cambia el color del texto si es necesario */
-    /* Otros estilos adicionales para el estado reservado */
-}
 
 .subir {
     position: fixed;
