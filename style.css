@@ -71,18 +71,20 @@ img {
   margin-bottom: 35px;
 }
 .contenedor .nombre {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
 }
 .contenedor .edad {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .contenedor label {
   font-family: infinity;
   text-align: center !important;
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.871);
+  padding: 15px;
+  border-radius: 8px;
 }
 .contenedor h3 {
   text-align: center;
@@ -103,19 +105,79 @@ img {
   border: solid white 3px;
   background-color: black;
 }
-.contenedor .calendario {
-  display: grid;
-  grid-template-columns: repeat(7, 150px);
-  grid-template-rows: repeat(6, 75px);
-  background-color: rgba(128, 128, 128, 0.467);
+.contenedor .calendario2 {
+  padding-left: 50px;
 }
-.contenedor button {
+.contenedor input[type=text] {
+  padding: 20px;
+  border: solid black 6px;
+  outline: none;
+  border-radius: 5px;
+}
+.contenedor input[type=time] {
+  padding: 20px;
+  border: solid black 6px;
+  outline: none;
+  border-radius: 5px;
+}
+.contenedor input[type=date] {
+  padding: 20px;
+  border: solid black 6px;
+  outline: none;
+  border-radius: 5px;
+  color: black;
+}
+.contenedor input[type=month] {
+  margin: 5px;
+  padding: 20px;
+  border: solid black 6px;
+  outline: none;
+  border-radius: 5px;
+  color: black;
+}
+.contenedor #horarioC {
+  margin: 5px;
+}
+.contenedor ::-webkit-calendar-picker-indicator {
+  background-color: rgba(175, 175, 175, 0.693);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.reservar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 46%;
+}
+
+.botonReservar {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.493);
   font-family: infinity;
-  font-size: 30px;
-  transition: 0.5s;
+  border: solid black 5px;
+  border-radius: 5px;
 }
-.contenedor button:hover {
-  background-color: rgba(198, 196, 196, 0.503);
+
+.consulta {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 42%;
+  top: 68%;
+}
+
+.botonConsulta {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.493);
+  font-family: infinity;
+  border: solid black 5px;
+  border-radius: 5px;
 }
 
 .subir {

@@ -1,6 +1,5 @@
     <!DOCTYPE html>
     <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,25 +14,19 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="/img/Logo.png" type="image/x-icon">
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css" rel="stylesheet">
         <title>BLACK LEMON</title>
     </head>
-
     <body>
         <nav class="navbar navbar-expand-sm navbar-dark">
-
             <div class="logo">
                 <img src="img/Logo.png" alt="">
             </div>
             <a class="navbar-brand logofont " href="#">Black Lemon</a>
-
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-
                 <i class="fa-solid fa-bars fa-fade fa-lg"></i>
             </button>
-
-
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -54,10 +47,8 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="contenedor">
-            <h2>Reserva tu turno</h2>
-
+    <div class="contenedor">
+        <h2>Reserva tu turno</h2>|
             <form>
                 <div class="nombre">
                     <label for="formGroupExampleInput">Nombre</label>
@@ -71,73 +62,23 @@
                 </div>
                 <div id="hora" class="hora">
                     <label for="horario">Horario</label>
-                    <select id="horario" class="form-control">
-                        <option value="9">9:00</option>
-                        <option value="10">10:00</option>
-                        <option value="11">11:00</option>
-                        <option value="12">12:00</option>
-                        <option value="13">13:00</option>
-                        <option value="14">14:00</option>
-                        <option value="15">15:00</option>
-                        <option value="16">16:00</option>
-                        <option value="17">17:00</option>
-                        <option value="18">18:00</option>
-                    </select>
+                    <input type="time" class="form-control" id="horario">
                 </div>
-            </form>
-
-            <div class="mes">
-                <h3>Septiembre</h3>
-                <div id="calendar" class="calendario">
-                    <h4>Lunes</h4>
-                    <h4>Martes</h4>
-                    <h4>Miercoles</h4>
-                    <h4>Jueves</h4>
-                    <h4>Viernes</h4>
-                    <h4>Sabado</h4>
-                    <h4>Domingo</h4>
-
-                    <button id="1" class="dia1">1</button>
-                    <button id="2" class="dia2">2</button>
-                    <button id="3" class="dia3">3</button>
-                    <button id="4" class="dia4">4</button>
-                    <button id="5" class="dia5">5</button>
-                    <button id="6" class="dia6">6</button>
-                    <button id="7" class="dia7">7</button>
-                    <button id="8" class="dia8">8</button>
-                    <button id="9" class="dia9">9</button>
-                    <button id="10" class="dia10">10</button>
-                    <button id="11" class="dia11">11</button>
-                    <button id="12" class="dia12">12</button>
-                    <button id="13" class="dia13">13</button>
-                    <button id="14" class="dia14">14</button>
-                    <button id="15" class="dia15">15</button>
-                    <button id="16" class="dia16">16</button>
-                    <button id="17" class="dia17">17</button>
-                    <button id="18" class="dia18">18</button>
-                    <button id="19" class="dia19">19</button>
-                    <button id="20" class="dia20">20</button>
-                    <button id="21" class="dia21">21</button>
-                    <button id="22" class="dia22">22</button>
-                    <button id="23" class="dia23">23</button>
-                    <button id="24" class="dia24">24</button>
-                    <button id="25" class="dia25">25</button>
-                    <button id="26" class="dia26">26</button>
-                    <button id="27" class="dia27">27</button>
-                    <button id="28" class="dia28">28</button>
-                    <button id="29" class="dia29">29</button>
-                    <button id="30" class="dia30">30</button>
-                    <button id="31" class="dia31">31</button>
-
+                <div class="calendario2">
+                    <label for="date" class="calendario">Seleccione la fecha</label>
+                    <input type="date" class="form-control">
                 </div>
-            </div>
-                
-        </div>
-
-        
-
-        </div>
-
+                <div class="consulta">
+                    <label for="consulta">Consultar dia disponible segun horario y mes</label>
+                    <input type="time" class="form-control" id="horarioC">
+                    <input type="month" class="form-control" id="month">
+                    <input type="submit" value="Consultar" class="botonConsulta">
+                </div>
+                <div class="reservar">
+                    <input type="submit" value="Reservar turno" class="botonReservar">
+                </div>
+    </div>
+        </form>
         <footer>
             <p>Todos los derechos son reservados por copyright</p>
             <div class="redes">
@@ -146,13 +87,9 @@
                 <a href="https://t.me/blacklemontattoo" target="_blank"><i class="fa-brands fa-telegram"></i>
             </div>
         </footer>
-
-
         <a href="#" class="subir">
             <i class="fa-regular fa-circle-up"></i>
         </a>
-
-
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -163,5 +100,4 @@
             integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
         </script>
         <script src="index.js"></script>
-
     </html>
