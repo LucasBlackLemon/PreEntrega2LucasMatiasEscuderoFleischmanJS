@@ -72,6 +72,30 @@ img {
     padding-right: 10px;
     margin-left: 10px;
 }
+.boxClima{
+    display: flex;
+    input[type="search"]{
+        margin: 30px;
+        width: 300px;
+        padding: 10px;
+        text-align: center;
+        border:solid black 6px;
+        outline: none;
+        border-radius: 5px;
+        color: black;
+    }
+
+    #btnClima{
+        margin: 30px;
+        width: 250px;
+        padding: 10px !important;
+        background-color: rgba(255, 255, 255, 0.493);
+        font-family: infinity;
+        border: solid black 5px;
+        border-radius: 5px;
+    }
+    }
+
 
 
 .contenedor {
@@ -79,7 +103,7 @@ img {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height:800px;
+    height:1000px;
     display: flex !important;
     align-items: center !important;
     flex-direction: column;
@@ -186,7 +210,7 @@ input[type="month"]{
     justify-content: center;
     align-items: center;
     position:absolute;
-    top: 55%;
+    top: 70%;
     left: 46%;
 }
 .botonReservar{
@@ -205,7 +229,7 @@ input[type="month"]{
     align-items: center;
     position:absolute;
     left: 42%;
-    top: 68%
+    top: 90%;
     
 }
 .botonConsulta{
